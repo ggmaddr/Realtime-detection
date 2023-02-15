@@ -1,0 +1,118 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@8.15.0
+2 info using node@v16.17.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 0ms
+6 timing config:load:builtin Completed in 0ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/Users/giangta/Desktop/extra learning/RESTful_Routes_CODE/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 2ms
+11 timing config:load:file:/Users/giangta/.npmrc Completed in 1ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 0ms
+18 timing config:load Completed in 6ms
+19 timing npm:load:configload Completed in 6ms
+20 timing npm:load:mkdirpcache Completed in 1ms
+21 timing npm:load:mkdirplogs Completed in 0ms
+22 verbose title npm i
+23 verbose argv "i"
+24 timing npm:load:setTitle Completed in 5ms
+25 timing config:load:flatten Completed in 1ms
+26 timing npm:load:display Completed in 2ms
+27 verbose logfile logs-max:10 dir:/Users/giangta/.npm/_logs
+28 verbose logfile /Users/giangta/.npm/_logs/2023-01-24T10_25_58_498Z-debug-0.log
+29 timing npm:load:logFile Completed in 2ms
+30 timing npm:load:timers Completed in 0ms
+31 timing npm:load:configScope Completed in 0ms
+32 timing npm:load Completed in 17ms
+33 timing arborist:ctor Completed in 0ms
+34 silly logfile start cleaning logs, removing 1 files
+35 silly logfile done cleaning log files
+36 timing idealTree:init Completed in 13ms
+37 timing idealTree:userRequests Completed in 0ms
+38 silly idealTree buildDeps
+39 timing idealTree:#root Completed in 0ms
+40 timing idealTree:buildDeps Completed in 0ms
+41 timing idealTree:fixDepFlags Completed in 0ms
+42 timing idealTree Completed in 15ms
+43 timing reify:loadTrees Completed in 15ms
+44 timing reify:diffTrees Completed in 1ms
+45 silly reify moves {}
+46 timing reify:retireShallow Completed in 0ms
+47 timing reify:createSparse Completed in 4ms
+48 timing reify:loadBundles Completed in 0ms
+49 silly audit bulk request {
+49 silly audit   'ansi-styles': [ '4.3.0' ],
+49 silly audit   async: [ '3.2.4' ],
+49 silly audit   'balanced-match': [ '1.0.2' ],
+49 silly audit   'brace-expansion': [ '1.1.11', '2.0.1' ],
+49 silly audit   chalk: [ '4.1.2' ],
+49 silly audit   'color-convert': [ '2.0.1' ],
+49 silly audit   'color-name': [ '1.1.4' ],
+49 silly audit   'concat-map': [ '0.0.1' ],
+49 silly audit   ejs: [ '3.1.8' ],
+49 silly audit   filelist: [ '1.0.4' ],
+49 silly audit   minimatch: [ '5.1.6', '3.1.2' ],
+49 silly audit   'has-flag': [ '4.0.0' ],
+49 silly audit   jake: [ '10.8.5' ],
+49 silly audit   'supports-color': [ '7.2.0' ]
+49 silly audit }
+50 timing reifyNode:node_modules/color-name Completed in 43ms
+51 timing reifyNode:node_modules/brace-expansion Completed in 43ms
+52 timing reifyNode:node_modules/supports-color Completed in 43ms
+53 timing reifyNode:node_modules/has-flag Completed in 43ms
+54 timing reifyNode:node_modules/balanced-match Completed in 44ms
+55 timing reifyNode:node_modules/filelist/node_modules/brace-expansion Completed in 44ms
+56 timing reifyNode:node_modules/ansi-styles Completed in 44ms
+57 timing reifyNode:node_modules/filelist Completed in 44ms
+58 timing reifyNode:node_modules/minimatch Completed in 44ms
+59 timing reifyNode:node_modules/filelist/node_modules/minimatch Completed in 45ms
+60 timing reifyNode:node_modules/concat-map Completed in 45ms
+61 timing reifyNode:node_modules/color-convert Completed in 45ms
+62 timing reifyNode:node_modules/chalk Completed in 45ms
+63 timing reifyNode:node_modules/ejs Completed in 46ms
+64 timing reifyNode:node_modules/jake Completed in 51ms
+65 timing reifyNode:node_modules/async Completed in 57ms
+66 timing reify:unpack Completed in 57ms
+67 timing reify:unretire Completed in 0ms
+68 timing build:queue Completed in 1ms
+69 timing build:link:node_modules/ejs Completed in 1ms
+70 timing build:link:node_modules/jake Completed in 1ms
+71 timing build:link Completed in 1ms
+72 timing build:deps Completed in 2ms
+73 timing build Completed in 2ms
+74 timing reify:build Completed in 2ms
+75 timing reify:trash Completed in 0ms
+76 timing reify:save Completed in 4ms
+77 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 220ms
+78 timing auditReport:getReport Completed in 221ms
+79 silly audit report {}
+80 timing auditReport:init Completed in 0ms
+81 timing reify:audit Completed in 221ms
+82 timing reify Completed in 244ms
+83 silly ADD node_modules/supports-color
+84 silly ADD node_modules/minimatch
+85 silly ADD node_modules/jake
+86 silly ADD node_modules/has-flag
+87 silly ADD node_modules/filelist
+88 silly ADD node_modules/filelist/node_modules/minimatch
+89 silly ADD node_modules/filelist/node_modules/brace-expansion
+90 silly ADD node_modules/ejs
+91 silly ADD node_modules/concat-map
+92 silly ADD node_modules/color-name
+93 silly ADD node_modules/color-convert
+94 silly ADD node_modules/chalk
+95 silly ADD node_modules/brace-expansion
+96 silly ADD node_modules/balanced-match
+97 silly ADD node_modules/async
+98 silly ADD node_modules/ansi-styles
+99 timing command:i Completed in 249ms
+100 verbose exit 0
+101 timing npm Completed in 296ms
+102 info ok
