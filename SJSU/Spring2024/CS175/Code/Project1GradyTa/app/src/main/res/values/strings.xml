@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Mortgage Calculator by Grady Ta</string>
+    <string name="enter_principle">Enter Principle ($)</string>
+    <string name="uninstall">UNINSTALL</string>
+    <string name="checkbox">Include taxes and insurance (0.1%)</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="r30">30 years</string>
+    <string name="r20">20 years</string>
+    <string name="r15">15 years</string>
+    <string name="result">Please CALCULATE for monthly payments.</string>
+    <string name="default_rate">Interest rate: 10.0%</string>
+    <string name="interest_rate">Interest rate: $%.2f</string>
+
+</resources>

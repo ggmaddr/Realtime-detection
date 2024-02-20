@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/large_margin"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/principle"
+        android:layout_width="125dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="40dp"
+        android:labelFor="@id/pInput"
+        android:text="@string/enter_principle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="125dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/default_rate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/principle"
+        app:layout_constraintTop_toBottomOf="@+id/principle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/selectloan"
+        android:layout_width="120dp"
+        android:layout_height="26dp"
+        android:text="Select Loan Term"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rate"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <EditText
+        android:id="@+id/pInput"
+        android:layout_width="208dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:autofillHints="principle"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toEndOf="@+id/principle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051"
+        tools:ignore="LabelFor" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <Button
+        android:id="@+id/unBtn"
+        android:layout_width="167dp"
+        android:layout_height="50dp"
+        android:text="@string/uninstall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/calBtn"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <Button
+        android:id="@+id/calBtn"
+        android:layout_width="167dp"
+        android:layout_height="50dp"
+        android:text="@string/calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="336dp"
+        android:layout_height="31dp"
+        android:max="200"
+        android:progress="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/rate"
+        app:layout_constraintTop_toBottomOf="@+id/rate"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="285dp"
+        android:layout_height="139dp"
+        android:layout_marginTop="@dimen/small_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectloan"
+        app:layout_constraintVertical_bias="0.060000002">
+
+        <RadioButton
+            android:id="@+id/r15"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="@string/r15" />
+
+        <RadioButton
+            android:id="@+id/r20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/r20" />
+
+        <RadioButton
+            android:id="@+id/r30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/r30" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calBtn"
+        app:layout_constraintVertical_bias="0.292" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
